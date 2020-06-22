@@ -19,7 +19,7 @@ $headers1 = [
 'origin: https://www.bankiom.com',
 'sec-fetch-site: cross-site',
 'sec-fetch-mode: cors',
-'referer: https://www.bankiom.com/?referralCode='.$reff.'&refSource=whatsapp',
+'referer: https://www.bankiom.com/r='.$reff.'',
 ];
 $curl1 = curl('https://app.viral-loops.com/api/v2/events', $data, $headers1);
 if(strpos($curl1, 'isNew')){
